@@ -137,5 +137,5 @@ if st.button("Dự đoán"):
     prediction = model.predict(features_df)
 
     # Kết quả dự đoán
-    result = "Có nguy cơ mắc bệnh tim" if prediction[0] == 1 else "Không có nguy cơ mắc bệnh tim"
+    result = "Có nguy cơ mắc bệnh tim\n\n\n\n Đừng buồn, bạn hãy chạy vào trong vườn hái một quả chanh.\nBổ đôi nó ra(nhớ là phải bổ ngang nha) xong vắt nó vào cốc, cho 2 thìa đường,500ml nước đun sôi để nguội\nCho thêm 2 viên đá nữa cho mát rồi khuấy đều lên sẽ thu đc dung dịch hay còn gọi là nước đường.\nUống nó! Nó sẽ ko giúp bạn hết bị bệnh tim đâu nhưng mà nươc đường thì rất ngọt, với lại biết đâu đó có thể sẽ là lần cuối cùng mà bạn đc uống nước đường thì sao =))))" if prediction[0] == 1 else "Không có nguy cơ mắc bệnh tim"
     st.success(result)
